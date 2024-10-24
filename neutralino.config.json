@@ -1,0 +1,35 @@
+{
+  "applicationId": "js.neutralino.zero",
+  "version": "1.0.0",
+  "defaultMode": "window",
+  "documentRoot": "/vueapp/dist",
+  "url": "/",
+  "enableServer": true,
+  "enableNativeAPI": true,
+  "nativeAllowList": [
+    "app.*"
+  ],
+  "modes": {
+    "window": {
+      "title": "vueapp",
+      "width": 800,
+      "height": 500,
+      "minWidth": 400,
+      "minHeight": 200,
+      "icon": "/vueapp/dist/favicon.ico",
+      "transparent": true,
+      "enableInspector": true
+    }
+  },
+  "cli": {
+    "binaryName": "vueapp",
+    "resourcesPath": "/vueapp/dist/",
+    "extensionsPath": "/extensions/",
+    "binaryVersion": "5.4.0",
+    "clientVersion": "5.4.0",
+    "frontendLibrary": {
+        "patchFile": "/vueapp/index.html",
+        "devUrl": "http://localhost:5173"
+    }
+  }
+}
